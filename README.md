@@ -7,7 +7,7 @@ usamos o postman para testar essa api confira:
 
 ![Captura de Tela (418)](https://github.com/Richardsantos2K/apigames/assets/106260967/b49cc31e-d5db-44a4-9a82-e6d45cea33e0)
 
-da pra ver que ficou um pouco grande a saida n é mesmo 🥹😂 ?
+da pra ver que ficou um pouco grande a saida não é mesmo 🥹😂 ?
 
 vamos diminuir um pouco fazendo alterações no Controller e no Service :D
 
