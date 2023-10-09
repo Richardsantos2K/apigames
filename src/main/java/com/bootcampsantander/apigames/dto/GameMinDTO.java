@@ -2,6 +2,7 @@ package com.bootcampsantander.apigames.dto;
 
 
 import com.bootcampsantander.apigames.entities.Game;
+import com.bootcampsantander.apigames.projections.GameMinProjection;
 
 public class GameMinDTO {
 
@@ -34,6 +35,13 @@ public class GameMinDTO {
         shortDescription = entity.getShortDescription();
     }
 
+    public GameMinDTO(GameMinProjection projection) {
+        id = projection.getId();
+        title = projection.getTitle();
+        year = projection.getYear();
+        imgUrl = projection.getImgUrl();
+        shortDescription = projection.getShortDescription();
+    }
 
     // só precisaremos de getters no DTO
 

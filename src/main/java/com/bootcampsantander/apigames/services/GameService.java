@@ -28,6 +28,7 @@ package com.bootcampsantander.apigames.services;
 import com.bootcampsantander.apigames.dto.GameDTO;
 import com.bootcampsantander.apigames.dto.GameMinDTO;
 import com.bootcampsantander.apigames.entities.Game;
+import com.bootcampsantander.apigames.projections.GameMinProjection;
 import com.bootcampsantander.apigames.repositories.GameRepository;
 import jakarta.persistence.Column;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -74,6 +75,12 @@ public class GameService {
 
         */
 
+    }
+
+    @Transactional(readOnly = true)
+    public List<GameMinDTO> findByList(Long listId){
+        List<GameMinProjection> result = gameRepository.searchByList(listId);
+        return result.stream().map(x -> new GameMinDTO(x)).toList();
     }
 
 
