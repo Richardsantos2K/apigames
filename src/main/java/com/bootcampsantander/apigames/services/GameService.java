@@ -25,10 +25,15 @@ package com.bootcampsantander.apigames.services;
     */
 
 //import org.springframework.stereotype.Component;
+import com.bootcampsantander.apigames.dto.GameDTO;
 import com.bootcampsantander.apigames.dto.GameMinDTO;
+import com.bootcampsantander.apigames.entities.Game;
 import com.bootcampsantander.apigames.repositories.GameRepository;
+import jakarta.persistence.Column;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import java.util.List;
 
 //@Component ou
@@ -39,7 +44,16 @@ public class GameService {
     @Autowired
     private GameRepository gameRepository;
 
+
+    @Transactional(readOnly = true)//A anotação @Transactional em Java é usada para indicar que um método deve ser executado em uma transação, garantindo atomicidade e consistência das operações com o banco de dados. Ela começa uma nova transação antes da execução do método e a finaliza (commit) após a conclusão bem-sucedida, ou a aborta (rollback) em caso de exceção.
+    public GameDTO findById(Long id){
+        Game result = gameRepository.findById(id).get();
+        return new GameDTO(result);
+
+    }
+
     //operação que chamara o repository e ira buscar dados banco de dados ou DTO
+    @Transactional(readOnly = true)
     public List<GameMinDTO> findAll(){ // metodo que retorna uma lista do tipoGameMinDTO
 
         //iremos fazer uma consulta no banco de dados para buscar os games aqui
