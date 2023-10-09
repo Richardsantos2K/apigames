@@ -41,6 +41,40 @@ https://github.com/Richardsantos2K/apigames/assets/106260967/469dd406-3bf2-4755-
 
 
 
+# Alterações Dia 09/10/2023
+
+hoje neste projeto ouve as seguintes alterações:
+
+agora conseguimos buscar os tipos de jogos atravez do genero: Aventura e RPG com o Id 1 // Jogos de Plataforma com o Id 2
+
+https://github.com/Richardsantos2K/apigames/assets/106260967/17862d08-b103-433a-82bc-e896c5d208d5
+
+ordenamos cada jogo em seu tipo de lista e sua posição:
+
+![Captura de tela 2023-10-09 150532](https://github.com/Richardsantos2K/apigames/assets/106260967/eae18e5f-d21c-42aa-a8f2-c1e8883f44bd)
+
+
+criamos as colunas Aventura e RPG // Jogos de Plataforma
+
+![Captura de tela 2023-10-09 150429](https://github.com/Richardsantos2K/apigames/assets/106260967/3df37194-c69d-496a-b35e-c05b6a376296)
+
+
+adicionames um codigo SQL para mostrar as informações:
+
+![Captura de tela 2023-10-09 133200](https://github.com/Richardsantos2K/apigames/assets/106260967/6df1e618-d3b8-4e78-bb23-b8659ff0b515)
+
+
+# O que aprendemos hoje no dia 09/10/2023:
+
+![Captura de tela 2023-10-09 132459](https://github.com/Richardsantos2K/apigames/assets/106260967/01fd9926-c452-4c29-80ad-b456aa62fcf0)
+
+
+
+
+
+
+
+
 
 
 
