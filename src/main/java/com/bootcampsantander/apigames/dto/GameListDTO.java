@@ -1,7 +1,7 @@
 package com.bootcampsantander.apigames.dto;
 
 import com.bootcampsantander.apigames.entities.GameList;
-import org.springframework.beans.BeanUtils;
+
 
 public class GameListDTO {
 

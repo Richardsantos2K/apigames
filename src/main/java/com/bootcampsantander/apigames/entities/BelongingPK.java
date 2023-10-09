@@ -10,7 +10,7 @@ import java.util.Objects;
 // classe auxiliar para representar uma chave primaria multipla com mais de um atributo
 
 @Embeddable // ira representar dois campos na tabela do nosso modelo relacional, estamos encapsulando dois atributos em uma classe só
-public class BelongingPk { //primary Key
+public class BelongingPK { //primary Key
 
     @ManyToOne// muitos para um: ira fazer o mapeamento do objetos relacionais representando o nosso diagrama de classes muitos para um
     @JoinColumn(name = "game_id")// criara uma coluna
@@ -23,10 +23,10 @@ public class BelongingPk { //primary Key
 
 
 
-    public BelongingPk(){
+    public BelongingPK(){
     }
 
-    public BelongingPk(Game game, GameList list) {
+    public BelongingPK(Game game, GameList list) {
         this.game = game;
         this.list = list;
     }
@@ -51,7 +51,7 @@ public class BelongingPk { //primary Key
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        BelongingPk that = (BelongingPk) o;
+        BelongingPK that = (BelongingPK) o;
         return game.equals(that.game) && list.equals(that.list);
     }
 

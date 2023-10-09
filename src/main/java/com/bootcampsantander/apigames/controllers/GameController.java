@@ -1,18 +1,18 @@
 package com.bootcampsantander.apigames.controllers;
 
 /*
-* O controller vai ser a porta de entrada do nosso Back-end
-* ele ira disponibilizar nossa API
-* quem implementa a API é o controlador
-*
-* ou seja
-*
-* o front-end chama o back-end
-*
-* o controlador ira expor um end point(função) para o mundo exeterno
-*
-* o controller ira chamar o serviço, que por sua vez chamara o repository que por fim chamara o Banco de dados
-* */
+ * O controller vai ser a porta de entrada do nosso Back-end
+ * ele ira disponibilizar nossa API
+ * quem implementa a API é o controlador
+ *
+ * ou seja
+ *
+ * o front-end chama o back-end
+ *
+ * o controlador ira expor um end point(função) para o mundo exeterno
+ *
+ * o controller ira chamar o serviço, que por sua vez chamara o repository que por fim chamara o Banco de dados
+ * */
 
 import com.bootcampsantander.apigames.dto.GameDTO;
 import com.bootcampsantander.apigames.dto.GameMinDTO;

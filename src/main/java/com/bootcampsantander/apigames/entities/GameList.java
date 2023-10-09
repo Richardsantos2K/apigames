@@ -10,7 +10,6 @@ public class GameList {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)//a anotação @GeneratedValue com a estratégia GenerationType.IDENTITY é usada para gerar automaticamente os valores do campo "ID" com base na estratégia de identidade do banco de dados.
-
     private Long Id;
     private String name;
 
